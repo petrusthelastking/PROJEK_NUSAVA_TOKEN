@@ -731,26 +731,6 @@ Special thanks to:
 
 ---
 
-## 👥 Team
-
-### Core Team
-
-| Role | Responsibility | LinkedIn |
-|------|----------------|----------|
-| **CEO** | Strategic Direction | [Profile](#) |
-| **CTO** | Technical Leadership | [Profile](#) |
-| **CFO** | Financial Management | [Profile](#) |
-| **Lead Developer** | Smart Contract Development | [Profile](#) |
-| **Legal Counsel** | Compliance & Regulations | [Profile](#) |
-
-### Advisors
-
-- **Blockchain Expert**: [Name TBD](#)
-- **Finance Expert**: [Name TBD](#)
-- **Marketing Expert**: [Name TBD](#)
-
----
-
 ## 📞 Contact Information
 
 ### 🏢 **PT Nusantara Digital Ventura**
