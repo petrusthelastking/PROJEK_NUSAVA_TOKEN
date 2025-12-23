@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🏝️ NUSAVA TOKEN (NUSV)
+# NUSAVA TOKEN (NUSV)
 
 ### _Empowering Indonesia's Digital Economy Through Blockchain_
 
