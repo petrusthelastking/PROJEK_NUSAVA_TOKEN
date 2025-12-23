@@ -1,0 +1,55 @@
+{
+  "name": "nusantara-token",
+  "version": "1.0.0",
+  "description": "PT Nusantara Digital Ventura - Utility Token Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "hardhat test",
+    "test:coverage": "hardhat coverage",
+    "compile": "hardhat compile",
+    "deploy:testnet": "hardhat run scripts/deploy-token.js --network polygon-mumbai",
+    "deploy:mainnet": "hardhat run scripts/deploy-token.js --network polygon",
+    "verify:testnet": "hardhat verify --network polygon-mumbai",
+    "verify:mainnet": "hardhat verify --network polygon",
+    "lint": "solhint 'contracts/**/*.sol'",
+    "lint:fix": "solhint 'contracts/**/*.sol' --fix",
+    "analyze": "slither contracts/",
+    "gas-report": "REPORT_GAS=true hardhat test"
+  },
+  "keywords": [
+    "blockchain",
+    "ethereum",
+    "polygon",
+    "token",
+    "erc20",
+    "vesting",
+    "airdrop"
+  ],
+  "author": "PT Nusantara Digital Ventura",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.0",
+    "@openzeppelin/hardhat-upgrades": "^3.0.0",
+    "hardhat": "^2.19.4",
+    "hardhat-gas-reporter": "^1.0.9",
+    "solidity-coverage": "^0.8.5",
+    "solhint": "^4.1.1",
+    "@typechain/hardhat": "^9.1.0",
+    "@typechain/ethers-v6": "^0.5.1",
+    "typechain": "^8.3.2",
+    "chai": "^4.3.10",
+    "ethers": "^6.10.0",
+    "dotenv": "^16.3.1"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.1",
+    "@chainlink/contracts": "^1.0.0",
+    "merkletreejs": "^0.3.11",
+    "keccak256": "^1.0.6"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}

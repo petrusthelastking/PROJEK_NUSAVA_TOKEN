@@ -1,0 +1,238 @@
+# =============================================================================
+# NUSANTARA TOKEN - Git Ignore Configuration
+# =============================================================================
+# This file prevents sensitive data from being committed to GitHub
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# CRITICAL: Environment Files (NEVER COMMIT!)
+# -----------------------------------------------------------------------------
+
+# Any .env file with actual credentials
+.env
+.env.local
+.env.production
+.env.staging
+
+# Keep .env.example (template without secrets)
+!.env.example
+
+# Secrets and private keys
+secrets/
+private-keys/
+*.key
+*.pem
+*.p12
+
+# Wallet files
+keystore/
+*.keystore
+mnemonic.txt
+
+# -----------------------------------------------------------------------------
+# Node.js Dependencies
+# -----------------------------------------------------------------------------
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Package manager lock files (keep package-lock.json for consistency)
+# Uncomment below if using yarn or pnpm instead
+# yarn.lock
+# pnpm-lock.yaml
+
+# -----------------------------------------------------------------------------
+# Hardhat & Ethereum Development
+# -----------------------------------------------------------------------------
+
+# Hardhat cache and artifacts
+cache/
+artifacts/
+typechain/
+typechain-types/
+
+# Coverage reports
+coverage/
+coverage.json
+*.lcov
+
+# Hardhat network files
+deployments/localhost/
+deployments/hardhat/
+
+# Gas reporter output
+gas-report.txt
+
+# Tenderly config (contains sensitive data)
+.tenderly/
+
+# -----------------------------------------------------------------------------
+# IDE & Editor Files
+# -----------------------------------------------------------------------------
+
+# VSCode
+.vscode/
+*.code-workspace
+.history/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# -----------------------------------------------------------------------------
+# Operating System Files
+# -----------------------------------------------------------------------------
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# -----------------------------------------------------------------------------
+# Build & Deployment Outputs
+# -----------------------------------------------------------------------------
+
+# Build outputs
+build/
+dist/
+lib/
+
+# Deployment logs
+deployment-*.log
+deploy-*.json
+
+# Transaction receipts (may contain sensitive info)
+receipts/
+*.receipt.json
+
+# -----------------------------------------------------------------------------
+# Testing & Documentation
+# -----------------------------------------------------------------------------
+
+# Test coverage
+.nyc_output/
+htmlcov/
+
+# Temporary test files
+tmp/
+temp/
+*.tmp
+
+# Generated documentation
+docs/_build/
+site/
+
+# -----------------------------------------------------------------------------
+# Logs & Debug Files
+# -----------------------------------------------------------------------------
+
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+pnpm-debug.log*
+
+# Debug files
+*.stackdump
+*.pid
+*.seed
+
+# -----------------------------------------------------------------------------
+# Security & Audit Files
+# -----------------------------------------------------------------------------
+
+# Audit reports with sensitive findings (until public)
+audits/internal/
+security-findings/
+
+# Keep public audit reports
+!audits/public/
+
+# -----------------------------------------------------------------------------
+# Backup Files
+# -----------------------------------------------------------------------------
+
+*.backup
+*.bak
+*.old
+*~
+
+# -----------------------------------------------------------------------------
+# Project-Specific Files
+# -----------------------------------------------------------------------------
+
+# Local configuration overrides
+config.local.js
+hardhat.config.local.js
+
+# Private deployment scripts
+scripts/private/
+
+# Local database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Compiled smart contracts (can be regenerated)
+# Uncomment if you want to exclude artifacts
+# *.json in artifacts/ is already excluded above
+
+# -----------------------------------------------------------------------------
+# IMPORTANT NOTES FOR DEVELOPERS
+# -----------------------------------------------------------------------------
+#
+# NEVER COMMIT:
+# ❌ .env files with real private keys
+# ❌ Wallet keystore files
+# ❌ Mnemonic phrases
+# ❌ API keys or secrets
+# ❌ Production deployment addresses (until public)
+# ❌ Internal audit reports (until cleared)
+#
+# SAFE TO COMMIT:
+# ✅ .env.example (template without secrets)
+# ✅ Smart contract source code
+# ✅ Test files
+# ✅ Documentation
+# ✅ Public audit reports
+# ✅ Deployment scripts (without hardcoded keys)
+# ✅ README and guides
+#
+# =============================================================================
